@@ -13,8 +13,6 @@ Add the following lines to your index.html (or equivalent) file.
     <script src="bower_components/tinycolor/dist/tinycolor-min.js"></script>
     <script src="bower_components/angular-color-picker/dist/angularjs-color-picker.min.js"></script>
     
-    <script src="bower_components/angular-ui-bootstrap-datetimepicker/datetimepicker.js"></script>
-
 Add `fng.colourPicker` to the list of servies your Angular module depends on. 
 
 In your Mongoose schemas you can set up fields like this:
