@@ -1,14 +1,10 @@
 (function () {
   'use strict';
 
-  var uiBootstrapDateModule = angular.module('fng.colourPicker', ['color.picker']);
+  var fngColourPickerModule = angular.module('fng.colourPicker', ['color.picker']);
 
-  uiBootstrapDateModule.controller('FngColourPickerCtrl', ['$scope', function ($scope) {
+  fngColourPickerModule.controller('FngColourPickerCtrl', ['$scope', function ($scope) {
     $scope.options = { };
-    $scope.showOptions = function() {
-      console.log('Starting');
-      console.log(JSON.stringify($scope.options,null,2));
-    }
   }])
     .directive('fngColourPicker', ['$compile', '$filter', 'pluginHelper', 'formMarkupHelper', 'cssFrameworkService',
       function ($compile, $filter, pluginHelper, formMarkupHelper, cssFrameworkService) {
