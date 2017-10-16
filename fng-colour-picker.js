@@ -4,7 +4,7 @@
   var fngColourPickerModule = angular.module('fng.colourPicker', ['color.picker']);
 
   fngColourPickerModule.controller('FngColourPickerCtrl', ['$scope', function ($scope) {
-    $scope.options = { };
+    $scope.options = {};
   }])
     .directive('fngColourPicker', ['$compile', '$filter', 'pluginHelper', 'formMarkupHelper', 'cssFrameworkService',
       function ($compile, $filter, pluginHelper, formMarkupHelper, cssFrameworkService) {
@@ -21,8 +21,6 @@
               'swatchOnly': true
             };
             scope.options = Object.assign({}, overRiddenDefaults, processedAttr.directiveOptions);
-            console.log(JSON.stringify(scope.options,null,2));
-            scope.showOptions();
             template = pluginHelper.buildInputMarkup(scope, attrs.model, processedAttr.info, processedAttr.options, false, false, function (buildingBlocks) {
               return '<color-picker options="options" ' + buildingBlocks.common + '></color-picker>';
             });
