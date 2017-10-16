@@ -1,0 +1,22 @@
+{
+  "name": "fng-colour-picker",
+  "version": "0.1.0",
+  "description": "Color picker for forms-angular",
+  "main": "fng-colour-picker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forms-angular/fng-colour-picker.git"
+  },
+  "keywords": [
+    "forms-angular"
+  ],
+  "author": "Mark chapman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forms-angular/fng-colour-picker/issues"
+  },
+  "homepage": "https://github.com/forms-angular/fng-colour-picker#readme"
+}
