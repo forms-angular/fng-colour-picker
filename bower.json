@@ -2,6 +2,7 @@
   "name": "fng-colour-picker",
   "description": "Color picker for forms-angular",
   "main": "fng-colour-picker.js",
+  "version":"0.11.0",
   "authors": [
     "Mark chapman"
   ],
