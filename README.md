@@ -3,15 +3,15 @@ Plugin for forms-angular that adds a colour picker (https://github.com/ruhley/an
 
 ## Usage
 
-    bower install fng-colour-picker
+    npm install fng-colour-picker
 
 Add the following lines to your index.html (or equivalent) file.
 
-    <link rel="stylesheet" href="bower_components/angular-color-picker/dist/angularjs-color-picker.min.css" />
-    <link rel="stylesheet" href="bower_components/angular-color-picker/dist/themes/angularjs-color-picker-bootstrap.min.css" />
-    <script src="bower_components/fng-colour-picker/fng-colour-picker.js"></script>
-    <script src="bower_components/tinycolor/dist/tinycolor-min.js"></script>
-    <script src="bower_components/angular-color-picker/dist/angularjs-color-picker.min.js"></script>
+    <link rel="stylesheet" href="angularjs-color-picker/dist/angularjs-color-picker.min.css" />
+    <link rel="stylesheet" href="angularjs-color-picker/dist/themes/angularjs-color-picker-bootstrap.min.css" />
+    <script src="fng-colour-picker/fng-colour-picker.js"></script>
+    <script src="tinycolor2/dist/tinycolor-min.js"></script>
+    <script src="angularjs-color-picker/dist/angularjs-color-picker.min.js"></script>
     
 Add `fng.colourPicker` to the list of servies your Angular module depends on. 
 
