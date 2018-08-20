@@ -14,7 +14,7 @@
     "forms-angular"
   ],
   "dependencies": {
-    "angularjs-color-picker":"3.4.8"
+    "angularjs-color-picker": "3.4.8"
   },
   "author": "Mark chapman",
   "license": "MIT",
