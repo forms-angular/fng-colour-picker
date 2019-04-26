@@ -1,6 +1,6 @@
 {
   "name": "fng-colour-picker",
-  "version": "0.12.0-beta.35",
+  "version": "0.12.0-beta.36",
   "description": "Color picker for forms-angular",
   "main": "fng-colour-picker.js",
   "scripts": {
