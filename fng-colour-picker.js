@@ -18,7 +18,8 @@
             var processedAttr = pluginHelper.extractFromAttr(attrs, 'fngColourPicker');
             var overRiddenDefaults = {
               'alpha': false,
-              'swatchOnly': true
+              'swatchOnly': true,
+              'placeholder': 'Select colour'
             };
             scope.options = Object.assign({}, overRiddenDefaults, processedAttr.directiveOptions);
             template = pluginHelper.buildInputMarkup(scope, attrs.model, processedAttr.info, processedAttr.options, false, false, function (buildingBlocks) {
