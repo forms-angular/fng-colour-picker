@@ -6,8 +6,8 @@
   fngColourPickerModule.controller('FngColourPickerCtrl', ['$scope', function ($scope) {
     $scope.options = {};
   }])
-    .directive('fngColourPicker', ['$compile', '$filter', 'pluginHelper', 'formMarkupHelper', 'cssFrameworkService',
-      function ($compile, $filter, pluginHelper, formMarkupHelper, cssFrameworkService) {
+    .directive('fngColourPicker', ['$compile', 'pluginHelper',
+      function ($compile, pluginHelper) {
         return {
           restrict: 'E',
           replace: true,
@@ -16,15 +16,22 @@
           link: function (scope, element, attrs) {
             var template;
             var processedAttr = pluginHelper.extractFromAttr(attrs, 'fngColourPicker');
-            var overRiddenDefaults = {
+            var overriddenDefaults = {
               'alpha': false,
               'swatchOnly': true,
               'placeholder': 'Select colour'
             };
-            scope.options = Object.assign({}, overRiddenDefaults, processedAttr.directiveOptions);
-            template = pluginHelper.buildInputMarkup(scope, attrs.model, processedAttr.info, processedAttr.options, false, false, function (buildingBlocks) {
-              return '<color-picker options="options" ' + buildingBlocks.common + '></color-picker>';
-            });
+            scope.options = Object.assign({}, overriddenDefaults, processedAttr.directiveOptions);
+            template = pluginHelper.buildInputMarkup(
+              scope,
+              attrs,
+              {
+                processedAttr
+              },
+              function (buildingBlocks) {
+                return '<color-picker options="options" ' + buildingBlocks.common + '></color-picker>';
+              }
+            );
             element.replaceWith($compile(template)(scope));
           }
         };
