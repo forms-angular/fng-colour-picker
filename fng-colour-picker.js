@@ -6,8 +6,8 @@
   fngColourPickerModule.controller('FngColourPickerCtrl', ['$scope', function ($scope) {
     $scope.options = {};
   }])
-    .directive('fngColourPicker', ['$compile', 'pluginHelper',
-      function ($compile, pluginHelper) {
+    .directive('fngColourPicker', ['$compile', 'PluginHelperService',
+      function ($compile, PluginHelperService) {
         return {
           restrict: 'E',
           replace: true,
@@ -15,14 +15,14 @@
           controller: 'FngColourPickerCtrl',
           link: function (scope, element, attrs) {
             var template;
-            var processedAttr = pluginHelper.extractFromAttr(attrs, 'fngColourPicker');
+            var processedAttr = PluginHelperService.extractFromAttr(attrs, 'fngColourPicker');
             var overriddenDefaults = {
               'alpha': false,
               'swatchOnly': true,
               'placeholder': 'Select colour'
             };
             scope.options = Object.assign({}, overriddenDefaults, processedAttr.directiveOptions);
-            template = pluginHelper.buildInputMarkup(
+            template = PluginHelperService.buildInputMarkup(
               scope,
               attrs,
               {
