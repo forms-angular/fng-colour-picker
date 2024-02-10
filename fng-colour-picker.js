@@ -15,7 +15,7 @@
           controller: 'FngColourPickerCtrl',
           link: function (scope, element, attrs) {
             var template;
-            var processedAttr = PluginHelperService.extractFromAttr(attrs, 'fngColourPicker');
+            var processedAttr = PluginHelperService.extractFromAttr(attrs, 'fngColourPicker', scope);
             var overriddenDefaults = {
               'alpha': false,
               'swatchOnly': true,
