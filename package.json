@@ -14,7 +14,17 @@
     "forms-angular"
   ],
   "dependencies": {
+    "angular": "npm:@brickhouse-tech/angular-lts@^1.10.4",
     "angularjs-color-picker": "3.4.8"
+  },
+  "overrides": {
+    "angular": "$angular",
+    "angular-sanitize": "npm:@brickhouse-tech/angular-lts@^1.10.4",
+    "angular-messages": "npm:@brickhouse-tech/angular-lts@^1.10.4",
+    "angular-route": "npm:@brickhouse-tech/angular-lts@^1.10.4",
+    "angular-cookies": "npm:@brickhouse-tech/angular-lts@^1.10.4",
+    "angular-mocks": "npm:@brickhouse-tech/angular-lts@^1.10.4",
+    "angular-animate": "npm:@brickhouse-tech/angular-lts@^1.10.4"
   },
   "author": "Mark chapman",
   "license": "MIT",
